@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Vertiefungsrichtung Naturgefahren</title>
+
+<style>
+		h1 {
+			color: red;
+			font-size: 500%;
+			font-style: italic;
+		}
+		h2 {color: blue;
+			font-size: 200%;
+			font-style: bold}
+</style>
+<h1> Vertiefungsrichtung: Naturgefahren </h1>
+
+<link rel="stylesheet" type="text/css" href="css/Main.css" />
+</head>
+<body>
+
+
+		
+	</div>
+	<div id="Background">
+		<div id="Text">
+			<h2>Exkursion der Vertiefungsrichtung: Island </h2>
+			<p>Als Exkursionsort wurde für diese Vertiefung Island ausgewählt. Genauer gesagt galten als Ziele der Exkursion zwei Ortschaften im Norden Islands, <li><a href="https://de.wikipedia.org/wiki/Siglufj%C3%B6r%C3%B0ur"> Siglufsfjordur</a></li> und <li><a href="https://de.wikipedia.org/wiki/%C3%93lafsfj%C3%B6r%C3%B0ur"> Olafsfjordur</a></li> </p>
+			
+			<p>Eine Gefährdung der Ortschaften ergibt sich aus folgenden Naturgefahren:</p>
+			
+			<ol>
+<li>Lawinen</li>
+<li>Muren</li>
+<li>Steinschlag</li>
+<li>Hydrologische Gefährdung</li>
+</ol>
+
+<br/><br/>
+
+	
+<h2> Prozessgruppe: Steinschlag	</h2>
+<p> Zur besseren Bearbeitung wurden je Untersuchungsgebiet die Naturgefahren auf einzelnen Personen aufgeteilt. Ich war für den Prozess Steinschlag zuständig.</p>
+
+<img src="http://www.eldey.de/Galerie/Verkehrsschilder/Verkehrsschild-Steinschlag-800px.jpg"
+	alt="Steinschlag Island"
+	title="Steinschlag Gefährdung auf Island"
+	style="height:300px;border:10px solid red"
+<em>Gefährdung durch Steinschlag</em>
+
+
+<img src="http://36.media.tumblr.com/16c644db4d91fbc6cb077f3d3e03a36e/tumblr_n1d0ya49KF1smkspmo1_1280.jpg"
+	alt="Steinschlag Island"
+	title="Mögliche gefährdete Stelle"
+	style="height:300px;border:10px solid red"
+/>
+
+
+
+<br/><br/>
+
+<h2> Überblick des Untersuchungsgebietes Siglufsfjordur</h2>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+</head>
+<body>
+    <div id="Karte Siglufsfjordur" style="width:900px;height:600px"></div>
+    <script>
+        var map = L.map('Karte Siglufsfjordur', {
+            center : [66.151667, -18.909444],
+            zoom : 13
+        });
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap contributors</a>'
+        }).addTo(map);
+		
+		
+		L.marker([66.1346094, -18.92925024]).addTo(map).bindPopup('<h1>Hallo!</h1><p>Hier wird versucht,</p><p>dass ganze umzusetzen!</p>');
+		L.marker([66.1346094, -18.93925024]).addTo(map).bindPopup('<h1>Hallo, Echo!!</h1><img style="width:300px;" src="http://www.vegagerdin.is/">');
+   
+   
+
+   </script>
+</body>
+
+<h2> Karte von Innsbruck als allgemeiner Vergleich</h2>
+<body>
+    <div id="map" style="width:900px;height:600px"></div>
+    <script>
+        var map = L.map('map', {
+            center : [47.208611, 11.460556],
+            zoom : 12
+        });
+        L.tileLayer("http://{s}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{z}/{y}/{x}.jpeg", {
+                subdomains : ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
+                attribution : 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
+            })
+        .addTo(map);
+		
+        var marker = L.marker([47.208611, 11.460556]).addTo(map);
+        marker.bindPopup('<h2>Blick vom Patscherkofel!</h2><img style="width:300px;" src="https://apps.tirol.gv.at/luft/patscherkofel.jpg" />')
+    </script>
+</body>
+
+
+	</div>
+	</div>
+	
+
+</html>
+
